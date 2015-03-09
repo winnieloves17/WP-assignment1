@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introduction Survey</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <meta charset="utf-8">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
       <style>
         h1 {color:red;}
       </style>
+      
+        <h1> Take 3 minutes to let us know more about you... </h1>
+        <p> Your answers will be kept strictly confidential and will only be used in aggregate. <p>
 
-      <h1> Take 3 minutes to let us know more about you... </h1>
-      <p> Your answers will be kept strictly confidential and will only be used in aggregate. <p>
-  </head>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<title>Introduction Survey</title>
-
-<hr><hr>
+        <!-- Add your site or application content here -->
+        <hr><hr>
 
 <p>
   <label for="name">1. Your name *</label>
-  <input type="text" name="n" id="name">
+  <input type="text" id="name" placeholders="NAME">
 </p>
 
 <hr>
@@ -32,7 +48,7 @@
 
 <p>
   <label for="birth">3. Birthday *</label>
-  <input type="text" name="b" id="birth">
+  <input type="date" id="birth">
 </p>
 
 <hr>
@@ -42,55 +58,59 @@ choose as many as you like </p>
 <p>
   <input type="checkbox" value="c0"> A.Walking <br>
   <input type="checkbox" value="c1"> B.Bus <br>
-  <input type="checkbox" value="c0"> C.Motorcycle <br>
-  <input type="checkbox" value="c1"> D.Car <br>
-  <input type="checkbox" value="c0"> E.Bus <br>
-  <input type="checkbox" value="c1"> F.Metro <br>    
-  <input type="checkbox" value="c0"> G.Train <br>
-  <input type="checkbox" value="c1"> H.Airplane <br>
+  <input type="checkbox" value="c2"> C.Motorcycle <br>
+  <input type="checkbox" value="c3"> D.Car <br>
+  <input type="checkbox" value="c4"> E.Bus <br>
+  <input type="checkbox" value="c5"> F.Metro <br>    
+  <input type="checkbox" value="c6"> G.Train <br>
+  <input type="checkbox" value="c7"> H.Airplane <br>
 </p>
 
 <hr>
 
 <p> 5. What is the highest level of education you have completed?* </p>
 <p>
-  <input type="radio" name="foo" value="r0"> A. Less than High School  <br>
-  <input type="radio" name="foo" value="r1"> B. High School or equivalent <br>
-  <input type="radio" name="foo" value="r2"> C. Attended College / University  <br>
-  <input type="radio" name="foo" value="r3"> D. Associate degree <br>
-  <input type="radio" name="foo" value="r4"> E. Bachelor's degree  <br>
-  <input type="radio" name="foo" value="r5"> F. Master's degree <br>
-  <input type="radio" name="foo" value="r6"> G. Professional degree  <br>
-  <input type="radio" name="foo" value="r7"> H. Doctorate degree <br>
-  <input type="radio" name="foo" value="r8"> I. I prefer not to answer  <br>
+  <input type="radio" name="edu" value="r0"> A. Less than High School  <br>
+  <input type="radio" name="edu" value="r1"> B. High School or equivalent <br>
+  <input type="radio" name="edu" value="r2"> C. Attended College / University  <br>
+  <input type="radio" name="edu" value="r3"> D. Associate degree <br>
+  <input type="radio" name="edu" value="r4"> E. Bachelor's degree  <br>
+  <input type="radio" name="edu" value="r5"> F. Master's degree <br>
+  <input type="radio" name="edu" value="r6"> G. Professional degree  <br>
+  <input type="radio" name="edu" value="r7"> H. Doctorate degree <br>
+  <input type="radio" name="edu" value="r8"> I. I prefer not to answer  <br>
 </p>
 
 <hr>
 
 <p>
   <label for="industry">6. Which industry do you work in or are most involved with?*</label>
-  <input type="text" name="i" id="industry">
+  <input type="text" name="i" id="industry" list="work" placeholders="WORK">
+  <datalist id ="work">  
+    <option></option>
+    <option></option>
+    <option></option>
 </p>
 
 <hr>
 
 <p>
   <label for="phone">7. Your phone #</label>
-  <input type="text" name="p" id="phone">
+  <input type="tel" id="phone" placeholders="09XX-XXX-XXX">
 </p>
 
 <hr>
 
 <p>
   <label for="email">8. Email address</label>
-  <input type="text" name="e" id="email">
+  <input type="email" name="e" id="email" placeholders="EMAIL">
 </p>
 
 <hr>
 
 <p>
   <label for="website">9. Personal website</label>
-  <input type="text" name="w" id="website">
+  <input type="web" id="website">
 </p>
 
 <hr><hr>
@@ -100,6 +120,23 @@ choose as many as you like </p>
 id="board" value="submit">
 <label for="board">Submit</label> press ENTER
 </p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
+
+
 
 
 

@@ -1,19 +1,34 @@
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>課程詳細資料</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <meta charset="utf-8">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+      
       <style>
       th {color:blue;}
       strong {color:red;}
       </style>
-  </head>
-  
-  <body>
 
-    <title>課程詳細資料</title>
+    </head>
 
-  <hr>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
 
 <!--課程-->
   
@@ -22,7 +37,7 @@
 
     <hr>
 
-    <table>
+    <table border="1">
 
     <tr> <th> 學年/學期 Academic Year/Semester </th> </tr>
     <tr> <td> 103學年 &nbsp; 第2學期 </td> </tr>
@@ -31,7 +46,7 @@
     <tr> <td> (中 Ch.)Ｗeb程式設計</td> </tr>
     <tr> <td> (英 Eng.)Web Programming</td> </tr>
     
-    <tr> <th> 授課教師 &nbsp; Instructor </th>  </tr>
+    <tr> <th rowspan="1"> 授課教師 &nbsp; Instructor </th>  </tr>
     <tr> <td> 余能豪 </td>  </tr>
     
     <tr> <th> 修別 &nbsp; Type of Credit </th>  </tr>
@@ -85,7 +100,7 @@
     </td> </tr>
     
     <tr> <th> 本課程附件 &nbsp; Course attachments </th> </tr>
-        <tr> <td> N/A </td> </tr>
+    <tr> <td> N/A </td> </tr>
 
   </table>  
 
@@ -99,11 +114,11 @@
   
   <tr> <ul> <td>
   <p> 能力項目說明： </p>
-    <li> A.具備發現與解決問題之能力	</li>
+    <li> A.具備發現與解決問題之能力 </li>
     <li> B.具備敘事與美學能力 </li>
-    <li> C.具備科技研發與系統開發能力 </li>	
+    <li> C.具備科技研發與系統開發能力 </li>  
     <li> D.具備團隊合作力 </li>
-    <li> E.具備人文關懷與社會參與情操 </li>	
+    <li> E.具備人文關懷與社會參與情操 </li>  
     <li> F.具備企劃整合與溝通能力 </li>
   </td> </ul> </tr>
 
@@ -124,4 +139,21 @@ id="board" value="print">
 
 </footer>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>
+
+
+
+
